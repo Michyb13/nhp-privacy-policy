@@ -1,341 +1,513 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — NHP Ordering Pad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --gold: #cc9f64;
-      --gold-light: rgba(204, 159, 100, 0.1);
-      --dark: #1a1a2e;
-      --text: #344054;
-      --muted: #667085;
-      --bg: #faf9f7;
-      --white: #ffffff;
-      --border: #e4e7ec;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — NHP Ordering Pad &amp; NHP Healthcare</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --gold: #cc9f64;
+        --gold-light: rgba(204, 159, 100, 0.1);
+        --dark: #1a1a2e;
+        --text: #344054;
+        --muted: #667085;
+        --bg: #faf9f7;
+        --white: #ffffff;
+        --border: #e4e7ec;
+      }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-    }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
 
-    /* Header */
-    header {
-      background: var(--dark);
-      padding: 60px 24px 50px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
+      /* Header */
+      header {
+        background: var(--dark);
+        padding: 60px 24px 50px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
 
-    header::before {
-      content: '';
-      position: absolute;
-      top: -60px;
-      right: -60px;
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(204,159,100,0.15), transparent 70%);
-    }
+      header::before {
+        content: "";
+        position: absolute;
+        top: -60px;
+        right: -60px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(204, 159, 100, 0.15),
+          transparent 70%
+        );
+      }
 
-    header::after {
-      content: '';
-      position: absolute;
-      bottom: -40px;
-      left: -40px;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(204,159,100,0.1), transparent 70%);
-    }
+      header::after {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: -40px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(204, 159, 100, 0.1),
+          transparent 70%
+        );
+      }
 
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
 
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--gold);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
+      .logo-icon {
+        width: 40px;
+        height: 40px;
+        background: var(--gold);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
 
-    .logo-text {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      color: var(--white);
-      font-weight: 600;
-    }
+      .logo-text {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        color: var(--white);
+        font-weight: 600;
+      }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(28px, 5vw, 42px);
-      color: var(--white);
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
+      header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(28px, 5vw, 42px);
+        color: var(--white);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
 
-    header h1 span {
-      color: var(--gold);
-    }
+      header h1 span {
+        color: var(--gold);
+      }
 
-    .header-meta {
-      font-size: 14px;
-      color: rgba(255,255,255,0.5);
-      font-weight: 300;
-    }
+      .header-meta {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+      }
 
-    /* Main content */
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 24px 80px;
-    }
+      /* Main content */
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
 
-    .intro-card {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 28px;
-      margin-bottom: 40px;
-      border-left: 4px solid var(--gold);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    }
+      .intro-card {
+        background: var(--white);
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 40px;
+        border-left: 4px solid var(--gold);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      }
 
-    .intro-card p {
-      font-size: 15px;
-      color: var(--text);
-      font-weight: 300;
-    }
+      .intro-card p {
+        font-size: 15px;
+        color: var(--text);
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
 
-    /* Sections */
-    .section {
-      margin-bottom: 36px;
-      background: var(--white);
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-      animation: fadeUp 0.4s ease both;
-    }
+      .intro-card p:last-child {
+        margin-bottom: 0;
+      }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+      /* Sections */
+      .section {
+        margin-bottom: 36px;
+        background: var(--white);
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        animation: fadeUp 0.4s ease both;
+      }
 
-    .section:nth-child(2) { animation-delay: 0.05s; }
-    .section:nth-child(3) { animation-delay: 0.1s; }
-    .section:nth-child(4) { animation-delay: 0.15s; }
-    .section:nth-child(5) { animation-delay: 0.2s; }
-    .section:nth-child(6) { animation-delay: 0.25s; }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-    .section-number {
-      display: inline-block;
-      background: var(--gold-light);
-      color: var(--gold);
-      font-size: 12px;
-      font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 20px;
-      margin-bottom: 10px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
+      .section:nth-child(2) {
+        animation-delay: 0.05s;
+      }
+      .section:nth-child(3) {
+        animation-delay: 0.1s;
+      }
+      .section:nth-child(4) {
+        animation-delay: 0.15s;
+      }
+      .section:nth-child(5) {
+        animation-delay: 0.2s;
+      }
+      .section:nth-child(6) {
+        animation-delay: 0.25s;
+      }
 
-    .section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      color: var(--dark);
-      font-weight: 600;
-      margin-bottom: 14px;
-    }
+      .section-number {
+        display: inline-block;
+        background: var(--gold-light);
+        color: var(--gold);
+        font-size: 12px;
+        font-weight: 500;
+        padding: 3px 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
 
-    .section p {
-      font-size: 15px;
-      color: var(--text);
-      font-weight: 300;
-      margin-bottom: 10px;
-    }
+      .section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: var(--dark);
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
 
-    .section p:last-child { margin-bottom: 0; }
+      .section h3 {
+        font-size: 13px;
+        color: var(--gold);
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: 20px 0 2px;
+      }
 
-    .data-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 12px;
-    }
+      .section p {
+        font-size: 15px;
+        color: var(--text);
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
 
-    .data-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 15px;
-      font-weight: 300;
-      color: var(--text);
-    }
+      .section p:last-child {
+        margin-bottom: 0;
+      }
 
-    .data-list li::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      min-width: 8px;
-      border-radius: 50%;
-      background: var(--gold);
-      margin-top: 7px;
-    }
+      .data-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 12px;
+      }
 
-    /* Contact box */
-    .contact-box {
-      background: var(--dark);
-      border-radius: 16px;
-      padding: 28px;
-      margin-top: 40px;
-      text-align: center;
-    }
+      .data-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--text);
+      }
 
-    .contact-box h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
-      color: var(--white);
-      margin-bottom: 8px;
-    }
+      .data-list li::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        min-width: 8px;
+        border-radius: 50%;
+        background: var(--gold);
+        margin-top: 7px;
+      }
 
-    .contact-box p {
-      font-size: 14px;
-      color: rgba(255,255,255,0.5);
-      font-weight: 300;
-      margin-bottom: 16px;
-    }
+      /* Contact box */
+      .contact-box {
+        background: var(--dark);
+        border-radius: 16px;
+        padding: 28px;
+        margin-top: 40px;
+        text-align: center;
+      }
 
-    .contact-box a {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--white);
-      text-decoration: none;
-      padding: 12px 28px;
-      border-radius: 10px;
-      font-size: 14px;
-      font-weight: 500;
-      transition: background 0.15s ease;
-    }
+      .contact-box h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: var(--white);
+        margin-bottom: 8px;
+      }
 
-    .contact-box a:hover {
-      background: #b8895a;
-    }
+      .contact-box p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 300;
+        margin-bottom: 16px;
+      }
 
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 24px;
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 300;
-      border-top: 1px solid var(--border);
-    }
-  </style>
-</head>
-<body>
+      .contact-box a {
+        display: inline-block;
+        background: var(--gold);
+        color: var(--white);
+        text-decoration: none;
+        padding: 12px 28px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        transition: background 0.15s ease;
+      }
 
-  <header>
-    <div class="logo">
-      <div class="logo-icon">📦</div>
-      <span class="logo-text">NHP Ordering Pad</span>
-    </div>
-    <h1>Privacy <span>Policy</span></h1>
-    <p class="header-meta">Last updated: March 1, 2026</p>
-  </header>
+      .contact-box a:hover {
+        background: #b8895a;
+      }
 
-  <main>
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 24px;
+        font-size: 13px;
+        color: var(--muted);
+        font-weight: 300;
+        border-top: 1px solid var(--border);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div class="logo-icon">📦</div>
+        <span class="logo-text">NHP Ordering Pad &amp; NHP Healthcare</span>
+      </div>
+      <h1>Privacy <span>Policy</span></h1>
+      <p class="header-meta">Last updated: November 8, 2026</p>
+    </header>
 
-    <div class="intro-card">
-      <p>New Heights Pharma ("we", "us", or "our") operates the NHP Ordering Pad mobile application. This policy explains how we collect, use, and protect your information when you use our app. By using NHP Ordering Pad, you agree to the practices described in this policy.</p>
-    </div>
+    <main>
+      <div class="intro-card">
+        <p>
+          New Heights Pharma ("we", "us", or "our") operates two mobile
+          applications:
+        </p>
+        <p>
+          <strong>NHP Ordering Pad</strong>, which our Wholesale customers use
+          to place orders with us, and <strong>NHP Healthcare</strong>, which
+          our Healthcare sales representatives and managers use to place and
+          approve orders for customers.
+        </p>
+        <p>
+          This policy explains how we collect, use, and protect your
+          information when you use either app. By using NHP Ordering Pad or NHP
+          Healthcare, you agree to the practices described in this policy.
+        </p>
+      </div>
 
-    <div class="section">
-      <span class="section-number">01</span>
-      <h2>Information We Collect</h2>
-      <p>We collect the following information to provide and improve our services:</p>
-      <ul class="data-list">
-        <li><strong>Name & Email Address</strong> — collected during account registration and used to identify you within the app and communicate with you.</li>
-        <li><strong>Push Notification Tokens</strong> — collected when you grant permission to receive push notifications, used solely to send order updates and relevant alerts.</li>
-      </ul>
-    </div>
+      <div class="section">
+        <span class="section-number">01</span>
+        <h2>Information We Collect</h2>
+        <p>
+          We collect the following information to provide and improve our
+          services.
+        </p>
 
-    <div class="section">
-      <span class="section-number">02</span>
-      <h2>How We Use Your Information</h2>
-      <p>Your information is used strictly to operate and improve the NHP Ordering Pad experience:</p>
-      <ul class="data-list">
-        <li>To authenticate and manage your account securely</li>
-        <li>To process and track your orders</li>
-        <li>To send push notifications about your orders and important updates</li>
-        <li>To communicate with you via email when necessary</li>
-      </ul>
-    </div>
+        <h3>Both apps</h3>
+        <ul class="data-list">
+          <li>
+            <strong>Name &amp; Email Address</strong> — collected when your
+            account is created and used to identify you within the app and
+            communicate with you.
+          </li>
+          <li>
+            <strong>Order Information</strong> — the products, quantities,
+            prices, delivery or pickup details and notes on the orders placed or
+            approved through the app.
+          </li>
+          <li>
+            <strong>Push Notification Tokens</strong> — collected when you grant
+            permission to receive push notifications, used solely to send order
+            updates and relevant alerts.
+          </li>
+        </ul>
 
-    <div class="section">
-      <span class="section-number">03</span>
-      <h2>Push Notifications</h2>
-      <p>We use push notifications to keep you informed about your order status and app updates. You can disable push notifications at any time through your device settings. Disabling notifications will not affect your ability to use the app.</p>
-    </div>
+        <h3>NHP Healthcare app (NHP staff)</h3>
+        <p>
+          NHP Healthcare is used to sign in with your NHP staff account. It
+          collects no personal information beyond what is listed above.
+        </p>
 
-    <div class="section">
-      <span class="section-number">04</span>
-      <h2>Data Sharing</h2>
-      <p>We do not sell, trade, or transfer your personal information to third parties. Your data is only shared with trusted service providers who assist in operating our platform, and only to the extent necessary to provide our services. All service providers are bound by confidentiality obligations.</p>
-    </div>
+        <p style="margin-top: 16px">
+          The apps do not access your location, contacts, camera, microphone or
+          photos.
+        </p>
+      </div>
 
-    <div class="section">
-      <span class="section-number">05</span>
-      <h2>Data Security</h2>
-      <p>We implement industry-standard security measures to protect your personal information against unauthorized access, alteration, or disclosure. All data is transmitted over secure encrypted connections (HTTPS).</p>
-    </div>
+      <div class="section">
+        <span class="section-number">02</span>
+        <h2>How We Use Your Information</h2>
+        <p>
+          Your information is used strictly to operate and improve the NHP
+          Ordering Pad and NHP Healthcare experience:
+        </p>
+        <ul class="data-list">
+          <li>To authenticate and manage your account securely</li>
+          <li>To process and track your orders</li>
+          <li>
+            In NHP Healthcare, to send each order to the right manager for
+            approval and, once approved, to our business systems for fulfilment
+          </li>
+          <li>
+            To send push notifications about your orders and important updates
+          </li>
+          <li>To communicate with you via email when necessary</li>
+          <li>
+            To keep a record of who placed and approved each order, for our
+            business and audit purposes
+          </li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <span class="section-number">06</span>
-      <h2>Data Retention</h2>
-      <p>We retain your personal information for as long as your account is active or as needed to provide services. You may request deletion of your account and associated data at any time by contacting us.</p>
-    </div>
+      <div class="section">
+        <span class="section-number">03</span>
+        <h2>Push Notifications</h2>
+        <p>
+          We use push notifications to keep you informed about your order status
+          and app updates.
+        </p>
+        <p>
+          In NHP Healthcare, managers are notified when an order is waiting for
+          their approval, and sales representatives are notified when their
+          order is approved, returned to them (with the reason), or given an
+          order number in our system.
+        </p>
+        <p>
+          Notifications are delivered through Apple Push Notification service
+          and Google Firebase Cloud Messaging. You can disable push
+          notifications at any time through your device settings. Disabling
+          notifications will not affect your ability to use the app, but you may
+          not see approvals and order updates as promptly.
+        </p>
+      </div>
 
-    <div class="section">
-      <span class="section-number">07</span>
-      <h2>Your Rights</h2>
-      <p>You have the right to access, correct, or delete your personal data at any time. You may also withdraw consent for push notifications through your device settings. To exercise any of these rights, please contact us using the details below.</p>
-    </div>
+      <div class="section">
+        <span class="section-number">04</span>
+        <h2>NHP Healthcare: Staff Sign-In</h2>
+        <p>
+          NHP Healthcare is for New Heights Pharma staff only. Accounts are
+          created by NHP, and you sign in with the email and password for your
+          NHP staff account. The app does not allow anyone to register
+          themselves.
+        </p>
+      </div>
 
-    <div class="section">
-      <span class="section-number">08</span>
-      <h2>Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date. We encourage you to review this policy periodically.</p>
-    </div>
+      <div class="section">
+        <span class="section-number">05</span>
+        <h2>Data Sharing</h2>
+        <p>
+          We do not sell, trade, or transfer your personal information to third
+          parties. Your data is only shared with trusted service providers who
+          assist in operating our platform, and only to the extent necessary to
+          provide our services. All service providers are bound by
+          confidentiality obligations.
+        </p>
+        <p>These providers are:</p>
+        <ul class="data-list">
+          <li>Amazon Web Services, for secure sign-in and account management</li>
+          <li>
+            Google (Firebase Cloud Messaging) and Apple (Apple Push Notification
+            service), for delivering push notifications
+          </li>
+        </ul>
+        <p style="margin-top: 12px">
+          Orders are also passed to our own business systems (SAP) so that they
+          can be fulfilled.
+        </p>
+      </div>
 
-    <div class="contact-box">
-      <h3>Questions or Concerns?</h3>
-      <p>If you have any questions about this Privacy Policy, please reach out to us.</p>
-      <a href="mailto:privacy@newheightspharma.com">Contact Us</a>
-    </div>
+      <div class="section">
+        <span class="section-number">06</span>
+        <h2>Data Security</h2>
+        <p>
+          We implement industry-standard security measures to protect your
+          personal information against unauthorized access, alteration, or
+          disclosure. All data is transmitted over secure encrypted connections
+          (HTTPS). Access within the apps is limited by role, so that people see
+          only what their work requires.
+        </p>
+      </div>
 
-  </main>
+      <div class="section">
+        <span class="section-number">07</span>
+        <h2>Data Retention</h2>
+        <p>
+          We retain your personal information for as long as your account is
+          active or as needed to provide services. You may request deletion of
+          your account and associated data at any time by contacting us.
+        </p>
+        <p>
+          Order records are kept for as long as we need them for our business,
+          accounting and legal obligations, even after an account is closed.
+        </p>
+      </div>
 
-  <footer>
-    &copy; 2026 New Heights Pharma. All rights reserved. — NHP Ordering Pad
-  </footer>
+      <div class="section">
+        <span class="section-number">08</span>
+        <h2>Your Rights</h2>
+        <p>
+          You have the right to access, correct, or delete your personal data at
+          any time. You may also withdraw consent for push notifications through
+          your device settings. To exercise any of these rights, please contact
+          us using the details below. Staff using NHP Healthcare can also
+          contact their NHP administrator.
+        </p>
+      </div>
 
-</body>
+      <div class="section">
+        <span class="section-number">09</span>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will
+          be posted on this page with an updated date. We encourage you to
+          review this policy periodically.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Questions or Concerns?</h3>
+        <p>
+          If you have any questions about this Privacy Policy, please reach out
+          to us.
+        </p>
+        <a href="mailto:privacy@newheightspharma.com">Contact Us</a>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 New Heights Pharma. All rights reserved. — NHP Ordering Pad
+      &amp; NHP Healthcare
+    </footer>
+  </body>
 </html>
